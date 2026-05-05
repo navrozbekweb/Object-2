@@ -442,25 +442,15 @@ description: "UV protection glasses",
 
 ];
 
-// 1-masala
+
+// 1-MASALA
 // Function yasang unda yuqoridagi arrayni price 500 dan yuqorilarini bitta arrayga yegib
 // qaytarsin.
-// 2-masala
-// Function yasang unda yuqoridagi arrayni rating 4dan yuqorilarini bitta arrayga yegib qaytarsin.
-// 3-masala
-// Function yasang unda yuqoridagi arrayda nechta mahsulot borligi aniqlansin va qaytarsin
-// 4-masala
-// Function yasang unda yuqoridagi arrayni price 500 dan yuqorilariga 10% lik chegirma berilsin
-// 500dan pastlariga 10% miqdorda narx qoshilsin va yangiangan array qayt sin qaytarsin.
-// 5-masala
-// Functuon yozing yuqoridagi arr ni clothes categoryga oidlarini olib tashlang va category Clothing
-// bolganlarsiz array qaytaring
-// 1-MASALA
 function getExpensiveProducts(arr) {
   let expensiveProducts = [];
   for (let i of arr) {
     if (i.price > 500) {
-      expensiveProducts.push(i); // butun obyekt
+      expensiveProducts.push(i);
     }
   }
   return expensiveProducts;
@@ -468,11 +458,12 @@ function getExpensiveProducts(arr) {
 console.log(getExpensiveProducts(products));
 
 //  2-MASALA
+// Function yasang unda yuqoridagi arrayni rating 4dan yuqorilarini bitta arrayga yegib qaytarsin.
 function getHighRatedProducts(arr) {
   let highRatedProducts = [];
   for (let i of arr) {
     if (i.rating > 4) {
-      highRatedProducts.push(i); // butun obyekt
+      highRatedProducts.push(i);
     }
   }
   return highRatedProducts;
@@ -481,6 +472,8 @@ console.log(getHighRatedProducts(products));
 
 
 // 3-MASALA
+// Function yasang unda yuqoridagi arrayda nechta mahsulot borligi aniqlansin va qaytarsin
+
 function countProducts(arr) {
   let count = 0;
   for (let i of arr) {
@@ -492,6 +485,8 @@ console.log(countProducts(products));
 
 
 //4-MASALA
+// Function yasang unda yuqoridagi arrayni price 500 dan yuqorilariga 10% lik chegirma berilsin
+// 500dan pastlariga 10% miqdorda narx qoshilsin va yangiangan array qayt sin qaytarsin.
 function applyPriceChange(arr) {
   let updatedProducts = [];
   for (let i of arr) {
@@ -507,11 +502,13 @@ console.log(applyPriceChange(products));
 
 
 // 5-MASALA
+// Functuon yozing yuqoridagi arr ni clothes categoryga oidlarini olib tashlang va category Clothing
+// bolganlarsiz array qaytaring
 function removeClothing(arr) {
   let noClothing = [];
   for (let i of arr) {
     if (i.category !== "Clothing") {
-      noClothing.push(i); // butun obyekt
+      noClothing.push(i);
     }
   }
   return noClothing;
